@@ -1,0 +1,20 @@
+Week 1:
+Tasks for the week: 
+    - Set up the ACTS framework on the local machine
+Steps/ Tutorials:
+    - Docker pull and build the image (https://github.com/acts-project/machines/pkgs/container/ubuntu2004)
+    - docker pull ghcr.io/acts-project/ubuntu2004:v9
+    - docker run --name [name] -v /home/<USERNAME>:/acts-project --interactive --tty ghcr.io/acts-project/ubuntu2004:v9 /bin/bash
+    - docker run --name [name] -v /home/<USERNAME>:/acts-project -it ghcr.io/acts-project/ubuntu2004:v9
+Build the revised version of the ACTS (https://github.com/hrzhao76/acts/tree/Add_Truth_and_Reco_Writer) (https://acts.readthedocs.io/en/latest/getting_started.html)
+    - apt install wget (install wget)
+    - wget [link] (get the acts zip file in the terminal)
+    - apt install unzip
+    - unzip [file name] (unzip the zip file)
+    - mkdir [build directory name] (create a build directory)
+    - cmake -B [build directory name] -S [source directory name] -DACTS_BUILD_FATRAS=ON -DACTS_BUILD_EXAMPLES=ON -DACTS_BUILD_EXAMPLES_PYTHIA8=ON
+    - cd [build directory name]
+    - make -j4
+(Perhaps start generating a small number of events)
+# ttbar event generation
+    - ./ActsExamplePythia8  --rnd-seed=42 --events=3  --output-dir=data/gen/ttbar_mu10 --output-root --output-csv --gen-cms-energy-gev=14000 --gen-hard-process=Top:qqbar2ttbar=on --gen-npileup=10 -l 1 | tee log.ActsExamplePythia
