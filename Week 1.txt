@@ -1,4 +1,5 @@
-Week 1:
+# Week 1
+
 Tasks for the week: 
     - Set up the ACTS framework on the local machine
 Steps/ Tutorials:
