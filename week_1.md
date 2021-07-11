@@ -25,7 +25,7 @@ docker run --name GIVECONTAINERNAME -v C:\Users\USERNAME:/acts_project -it ghcr.
   in the environment on your local machine so that the "-v" would refer to that location. 
   And, you need to change GIVECONTAINERANAME and USERNAME to your preference.
 
-#### 2. Build the revided version of [ACTS](https://github.com/hrzhao76/acts/tree/Add_Truth_and_Reco_Writer)
+#### 2. Build the revised version of [ACTS](https://github.com/hrzhao76/acts/tree/Add_Truth_and_Reco_Writer)
   - copy the zip file address of ACTS
   ![image](https://user-images.githubusercontent.com/72419337/125178587-71c74f80-e19b-11eb-920b-8490a51c42c9.png)
   - follow the terminal commands below
