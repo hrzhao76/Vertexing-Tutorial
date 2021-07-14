@@ -29,5 +29,5 @@ docker cp home/USERNAME/acts_project [virtual machine name]:/[location you want 
  - make sure the root file is in the same directory when creating a jupyter notebook
  - using uproot to read the root file and print out the truth information [.ipynb file attached](https://github.com/dlai211/Vertexing-Tutorial/blob/main/week_2.ipynb)
 
-## Exercise
+## Exercise:
  - Isolate _x-position, y-position, z-position, and number of vertex per events_ and create histograms for each. 
