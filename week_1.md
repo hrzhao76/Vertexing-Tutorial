@@ -2,9 +2,9 @@
 
 ## Tasks for the Week:
 
-- set up the ACTS framework on the local machine
-- start generating small number of events and understand the commands
-- start reading on the [ATLAS document about vertex recontruction](http://cdsweb.cern.ch/record/2670380/files/ATL-PHYS-PUB-2019-015.pdf)
+ - [x] set up the ACTS framework on the local machine
+ - [x] start generating small number of events and understand the commands
+ - [x] start reading on the [ATLAS document about vertex recontruction](http://cdsweb.cern.ch/record/2670380/files/ATL-PHYS-PUB-2019-015.pdf)
 
 ## Tutorials:
 
