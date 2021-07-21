@@ -42,10 +42,19 @@ docker run --name GIVECONTAINERNAME -e JUPYTER_ENABLE_LAB=yes -p 8899:8888 -v C:
  wget https://root.cern/download/root_v6.24.02.Linux-ubuntu20-x86_64-gcc9.3.tar.gz
  tar -xzvf root_v6.24.02.Linux-ubuntu20-x86_64-gcc9.3.tar.gz
 ```
- - you will notice your root directory is not empty anymore, then
+ - you will notice your root directory is not empty anymore, we will use it later.
+
+
+#### 3. Build the revised version of [ACTS](https://github.com/hrzhao76/acts/tree/Add_Truth_and_Reco_Writer)
+ - same commands as those in week 1.
+ - **Remember** DO NOT source the new version of ROOT before running acts. Let it run its default version.
+
+#### 4. Open Jupyter Notebook 
+ - To use the new version of the ROOT,
 ```bash
  source root/bin/thisroot.sh
 ```
+##### Option (if you have generated the events, and you want to make the source command a default):
  - we also need to enter the command into the environment variables so that you don't have to type in this command every time we want to use ROOT
  - to edit the environment variable
 ```bash 
@@ -59,12 +68,9 @@ docker run --name GIVECONTAINERNAME -e JUPYTER_ENABLE_LAB=yes -p 8899:8888 -v C:
 source root/bin/thisroot.sh
 ```
  - then click `esc`, (look at the right bottom), and click `:wq` to save the change and exit. 
-
-#### 3. Build the revised version of [ACTS](https://github.com/hrzhao76/acts/tree/Add_Truth_and_Reco_Writer)
- - same commands as those in week 1.
-
-#### 4. Open Jupyter Notebook 
  - remember to copy the token
+
+##### open Jupyter Lab
 ```bash
 jupyter lab --ip 0.0.0.0 --allow-root
 ```
