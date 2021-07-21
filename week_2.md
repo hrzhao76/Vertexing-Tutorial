@@ -1,9 +1,9 @@
 # Week 2
 
 ## Task for the Week:
- - [ ] establish jupyter lab to ACTS container.
- - [ ] familiarize with ACTS commands from generating information from Pythia8 to using AMVF to do vertexing. 
- - [ ] start learning the root file structure and print out truth information and reconstructed information from the root file by using _uproot_
+ - [x] establish jupyter lab to ACTS container.
+ - [x] familiarize with ACTS commands from generating information from Pythia8 to using AMVF to do vertexing. 
+ - [x] start learning the root file structure and print out truth information and reconstructed information from the root file by using _uproot_
  - [ ] _perhaps_ start drawing some performance plot after creating your own 10000 events root file. (complete the exercise)
 
 ## Tutorials:
