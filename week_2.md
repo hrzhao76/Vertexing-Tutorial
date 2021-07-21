@@ -31,7 +31,7 @@ docker run --name GIVECONTAINERNAME -e JUPYTER_ENABLE_LAB=yes -p 8899:8888 -v C:
  apt install tar
  apt install vim (enter 'Y' when being asked whether to use space in the disk)
  pip3 install jupyterlab
- pip3 install uproot (includes numpy)
+ pip3 install uproot3 (includes numpy)
  pip3 install awkward (the format of arrays in root files)
  pip3 install matplotlib
  pip3 install scipy
