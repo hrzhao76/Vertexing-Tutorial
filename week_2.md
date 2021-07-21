@@ -84,3 +84,4 @@ jupyter lab --ip 0.0.0.0 --allow-root
 
 ## Exercise:
  - Isolate _x-position, y-position, z-position, and number of vertex per events_ and create histograms for each. 
+![image](https://user-images.githubusercontent.com/72419337/126566289-370449ea-c902-4a85-b0d4-cc8362708bb2.png)
