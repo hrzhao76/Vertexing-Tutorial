@@ -123,11 +123,12 @@ docker run --name GIVECONTAINERNAME -v C:\Users\USERNAME:/acts_project -it ghcr.
   - **# Truth Tracking**
   - Read the simulation output (truth hits and truth particles), smear the true hits, creates seeds from the truth particles, builds truth tracks (uses the truth infor. to group simulated hits into tracks) and fits them. 
 ``` bash
-./ActsExampleTruthTracksGeneric --rnd-seed=42 --input-dir=data/sim_generic/ttbar_mu10 --output-dir=data/reco_generic/ttbar_mu10 --bf-constant-tesla=0:0:2 --digi-config-file ~/sw/source/acts/Examples/Algorithms/Digitization/share/default-smearing-config-generic.json -l 1 | tee log.ActsExampleTruthTracksGeneric
+./ActsExampleTruthTracksGeneric --rnd-seed=42 --input-dir=data/sim_generic/ttbar_mu10 --output-dir=data/reco_generic/ttbar_mu10 --bf-constant-tesla=0:0:2 --digi-config-file ../../[ACTS_NAME]/Examples/Algorithms/Digitization/share/default-smearing-config-generic.json -l 1 | tee log.ActsExampleTruthTracksGeneric
 ```
   - **#vertexing + performance writing**
   - Setup the magnetic field, add additional particle selection, apply some primary vertexing selection cuts, find vertices, write the track parameters from fitting.
 ``` bash
+cp data/gen/ttbar_mu10/particles.root data/reco_generic/ttbar_mu10
 ./ActsExampleVertexFinderTrackReaderPerformanceWriter  --bf-constant-tesla=0:0:2 --input-dir=data/reco_generic/ttbar_mu10 --output-dir=data/vertexing/ttbar_mu10 -l 1 | tee log.ActsExampleVertexFinderTrackReaderPerformanceWriter
 ```
 
