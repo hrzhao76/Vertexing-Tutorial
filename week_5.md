@@ -2,9 +2,9 @@
 
 ## Tasks for the Week:
 
-- [] finish d0-z0-plot with color coding 
-- [] finish HS vertices vz plot
-- [] graph number of tracks plot & z errors plot
+- [ ] finish d0-z0-plot with color coding 
+- [ ] finish HS vertices vz plot
+- [ ] graph number of tracks plot & z errors plot
 
 ## Results:
 - Reminder: the y-axis is in logarithm.
